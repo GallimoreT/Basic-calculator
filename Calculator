@@ -1,23 +1,27 @@
-num1 = int(input("Enter first number: "))
-oper = input("Enter the operator")
-num2 = int(input("Enter second number: "))
+
+num1 = input("Enter first number: ")
+oper = input("Enter the operator: ")
+num2 = input("Enter second number: ")
+
 
 try:
     if oper == "+":
-        print(num1 + num2)
+        print(float(num1) + float(num2))
     elif oper == "-":
-        print(num1 - num2)
+        print(float(num1) - float(num2))
     elif oper == "*":
-        print(num1 * num2)
+        print(float(num1) * float(num2))
     elif oper == "/":
-        print(num1 / num2)
+        print(float(num1) / float(num2))
     elif oper == "^":
-        print(num1 ** num2)
+        print(float(num1) ** float(num2))
+    else:
+        print("Invalid operator")
 except ZeroDivisionError:
     print("Error: Divide by zero")
 except ValueError:
     print("Error: Invalid input")
-    
+
     
     
     

@@ -1,5 +1,5 @@
 num1 = int(input("Enter first number: "))
-oper = input("Enter the operator)
+oper = input("Enter the operator")
 num2 = int(input("Enter second number: "))
 
 try:
